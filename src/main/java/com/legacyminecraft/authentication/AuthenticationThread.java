@@ -29,7 +29,7 @@ public class AuthenticationThread extends Thread {
                      + results.getTotal()
                );
 			if(results.getFailed() == results.getTotal()){
-				Minecraft.sessionErrorTime = System.currentTimeMillis();
+				Minecraft.failedSessionCheckTime = System.currentTimeMillis();
 			}
          } catch (Exception var4) {
             System.out.println("An error occurred authing with Beta Evolutions: ");
